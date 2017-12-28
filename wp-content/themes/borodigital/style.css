@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*    Theme name: Borodigital     */
+/*    Author: Rafael Esaá          */
+@media only screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+    max-width: 1160px; }
+  .container-header {
+    width: 100%;
+    max-width: 1320px; } }
+
+@media only screen and (min-width: 1199px) and (max-width: 1439px) {
+  .container {
+    width: 100%;
+    max-width: 1080px; }
+  .header-container .container {
+    max-width: none;
+    padding: 0 65px; } }
+
+@media only screen and (min-width: 992px) {
+  .prueba {
+    color: red; } }
+
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+  @import "media/tablet/_basicLandScape.sass" */
+/* @media only screen and (max-width: 768px) and (orientation: landscape)
+  @import "media/mobile/_basicLandScape.sass" */
+/* @media only screen and (max-width: 321px)
+  @import "media/smallmobile/_basic.sass" */
+body {
+  margin: 0px; }

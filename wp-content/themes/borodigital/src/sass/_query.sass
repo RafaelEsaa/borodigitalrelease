@@ -1,0 +1,42 @@
+// iMac
+@media only screen and (min-width: 1440px)
+  .container
+    width: 100%
+    max-width: 1160px
+
+  .container-header
+    width: 100%
+    max-width: 1320px
+
+@media only screen and (min-width: 1199px) and (max-width: 1439px)
+  .container
+    width: 100%
+    max-width: 1080px
+
+  .header-container
+    .container
+      max-width: none
+      padding: 0 65px
+
+@media only screen and (min-width: 992px)
+  @import "media/_desktop.sass"
+
+// Tablets
+@media only screen and (min-width: 768px) and (max-width: 992px)
+  @import "media/_tablet.sass"
+
+// Mobile
+@media only screen and (max-width: 768px)
+  @import "media/_mobile.sass"
+
+// Tablets Landscape
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+  @import "media/tablet/_basicLandScape.sass" */
+
+// Mobile Landscape
+/* @media only screen and (max-width: 768px) and (orientation: landscape)
+  @import "media/mobile/_basicLandScape.sass" */
+
+// Mobile Small
+/* @media only screen and (max-width: 321px)
+  @import "media/smallmobile/_basic.sass" */
