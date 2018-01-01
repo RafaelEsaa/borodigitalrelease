@@ -1,0 +1,12 @@
+{
+    "name": "rafaelesaa/borodigital",
+    "authors": [
+        {
+            "name": "rafaelesaa",
+            "email": "esaarafael@hotmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "4.0.0-beta.2"
+    }
+}
