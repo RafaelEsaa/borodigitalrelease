@@ -1,3 +1,22 @@
+p
+  font-family: $texto
+
+h1
+  font-family: $texto
+  font-weight: 900
+
+h2
+  font-family: $texto
+  font-weight: 900
+
+h3
+  font-family: $texto
+  font-weight: 900
+
+h4
+  font-family: $texto
+  font-weight: 900
+
 .row
   width: 100%
   margin: 0px
@@ -16,13 +35,131 @@
   background-color: rgba(5,5,5,0.24)
   z-index: 1
 
-.menu
-  position: fixed
-  z-index: 2
-  background-color: rgba(5, 5, 5, 0.3)
-  nav
-    height: 5.5vw
+// Menu Hamburger
+.icon
+  display: inline-block
+  cursor: pointer
+
+.line1, .line2, .line3
+  width: 55px
+  height: 9px
+  background-color: #ffffff
+  margin: 6px 0
+  transition: 0.4s
+  border-radius: 4px
+
+.change
+  .line1
+    -webkit-transform: rotate(-40deg) translate(-12px, 12px)
+    transform: rotate(-40deg) translate(-12px, 12px)
+  .line2
+    opacity: 0
+  .line3
+    -webkit-transform: rotate(40deg) translate(-12px, -12px)
+    transform: rotate(40deg) translate(-9px, -10px)
+
+.navbar-toggler
+  z-index: 3
+  border: none
+
+.navbar-collapse
+  z-index: 3
+
+// Hover when you do scroll down
+.menu-fixed-hover
+  background-color: rgba(192, 192, 192, 0.8)
+  transition: all 0.8s ease-in-out 0s
+  -webkit-box-shadow: 0px 2px 26px 5px #3D3D3D
+  box-shadow: 0px 2px 26px 0px #3D3D3D
 
 .linea
   width: 10%
   border: 1px solid #e4e4e4
+
+// Style Bootstrap for Gravity form and custom style
+.gform_fields
+  @extend .list-unstyled
+  @extend .row
+  input, select, textarea
+    @extend .form-control
+  textarea
+    height: auto
+
+.gfield_description
+  @extend .alert
+
+.validation_error
+  @extend .alert
+  @extend .alert-danger
+
+.validation_message
+  @extend .alert
+  @extend .alert-success
+
+.gform_button
+  @extend .btn
+
+.gfield_required
+  color: $alert-danger-text
+
+.gform_wrapper ul.gfield_radio li, .gform_wrapper ul.gfield_checkbox li
+  @extend .form-check
+
+.gform_validation_container
+  display: none
+
+.gfield_error .ginput_container
+  margin-bottom: 10px
+
+.validation_error
+  padding: 5px
+  text-align: center
+
+#gform_1
+  ul
+    li
+      margin-bottom: 10px
+      width: 100%
+      label
+        margin-bottom: 3px
+      div
+        input
+          padding: 5px
+          background: transparent
+          border: 1px solid #585858
+          border-radius: 2px
+          width: 100%
+          &:hover
+            color: yellow
+            font-weight: 100
+      .gfield_description
+        margin: 0px
+        padding: 5px
+        font-size: 12px
+        text-align: center
+
+.gform_footer
+  padding-top: 10px
+  input
+    border-radius: 2px
+    border: 1px solid #585858
+    background: transparent
+    color: #585858
+    &:hover
+      color: white
+      border: 1px solid white
+
+// Footer
+.directions
+  background-color: #242424
+  .email-direction
+    padding-top: 12px
+    color: $white
+    a
+      color: dodgerblue
+      &:hover
+        color: $white
+
+// Class for section is in opacity 0, so when the window stay there section, opacity 1
+.hideme
+  opacity: 0
